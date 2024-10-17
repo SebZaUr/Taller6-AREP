@@ -1,6 +1,6 @@
 package arep.taller6.backsecurity.service;
 
-import arep.taller6.backsecurity.controller.UserDTO;
+import arep.taller6.backsecurity.model.UserDTO;
 import arep.taller6.backsecurity.enums.RoleEntity;
 import arep.taller6.backsecurity.model.UserEntity;
 import arep.taller6.backsecurity.repository.UserRepository;

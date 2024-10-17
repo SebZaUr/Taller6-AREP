@@ -1,12 +1,13 @@
 package arep.taller6.backsecurity.controller;
 
+import arep.taller6.backsecurity.model.UserDTO;
 import arep.taller6.backsecurity.model.UserEntity;
 import arep.taller6.backsecurity.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.Optional;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,7 +33,7 @@ public class UserController {
     @GetMapping("/users")
     public ResponseEntity<Object> getUsers() {
         try{
-            return new ResponseEntity<>(userService.getAll(), HttpStatus.CREATED);
+            return new ResponseEntity<>(userService.getAll(), HttpStatus.OK);
         }catch(Exception e){
             Logger.getLogger(UserEntity.class.getName()).log(Level.SEVERE, null, e);
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);

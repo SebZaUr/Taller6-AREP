@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneda Hoy</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/cliente.js"></script>
+</head>
+    <body>
+        <header>
+            <h1>Moneda Hoy</h1>
+        </header>
+        <main>
+            <p>Registrate y podras consultar cualquier divisa del mundo</p>
+        </main>
+        <div id="signin">
+            <form id="siguInForm">
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </div>
+        <div>
+            <h2 id="confirm"></h2>
+        </div>
+        <footer>
+            <p>&copy; 2024 Moneda Hoy</p>
+        </footer>
+    </body>
+</html>

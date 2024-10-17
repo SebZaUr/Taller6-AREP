@@ -1,4 +1,4 @@
-package arep.taller6.backsecurity.controller;
+package arep.taller6.backsecurity.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
